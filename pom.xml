@@ -8,23 +8,17 @@
     <artifactId>com.ui.seleniumHomeWork</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
-    <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
-    <dependency>
-        <groupId>com.codeborne</groupId>
-        <artifactId>selenide</artifactId>
-        <version>5.5.0</version>
-    </dependency>
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version>
-    </dependency>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
-        <scope>compile</scope>
-    </dependency>
-</dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
