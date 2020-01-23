@@ -41,7 +41,7 @@ public class Test {
         webDriver.findElement(By.xpath("//input[@placeholder='Москва']")).sendKeys("Нижегородская область");
         webDriver.findElement(By.xpath("//a[contains(text(),'Нижегородская')]")).click();
         WebElement currentRegion = webDriver.findElement(By.xpath("//div[@class='hd-ft-region__title']/span"));
-        Assert.assertEquals("Неверно отобразилось местоположение на странице", currentRegion.getText(), "Нижегородская область");
+        Assert.assertEquals("Неверно отобразилось местоположение на странице", "Нижегородская область", currentRegion.getText());
         List<WebElement> iconFooterSocial = webDriver.findElements(By.xpath("//li[@class='footer__social_item']/a"));
         JAVASCRIPT_EXECUTOR.executeScript("return arguments[0].scrollIntoView(true);", iconFooterSocial.get(1));
         for (int i = 0; i < iconFooterSocial.size(); i++) {
